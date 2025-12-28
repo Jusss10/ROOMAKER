@@ -1,19 +1,13 @@
 import './App.css'
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import Container from './components/Container';
+
 
 
 function App() {
-
   return (
-		<div id="canvas-container">
-			<Canvas>
-				<mesh>
-					<boxGeometry args={[2, 2, 2]} />
-				</mesh>
-				<OrbitControls />
-			</Canvas>
-		</div>
+		<>
+			<Container />
+		</>
 	);
 }
 
