@@ -1,11 +1,9 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { useControls } from "leva";
-// 1unit = 1cm
+// 1 unit = 1 cm
+
 
 export default function Container() {
-    const controls = useControls({ position: -2 });
-     console.log(controls.position)
 	return (
 		<div id="canvas-container">
 			<Canvas
@@ -15,6 +13,7 @@ export default function Container() {
 					far: 200,
 					position: [3, 2, 6],
 				}}>
+
 				<gridHelper args={[300, 300]} />
 				<OrbitControls />
 			</Canvas>
